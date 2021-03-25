@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title"> Anime Consumption Survey Form </h1>
+            <p id="description"> This questionaire will ask a few questions concerning your anime consumption.  Thank you for your time and patience!  </p>
+        </header>
+    
+     
+        <form id="survey-form" action="">
+            <div class="form-element">
+                <label id="name-label" for="name"> Name </label>
+                <input type="text" name="name" id="name" placeholder=" Enter Name...">
+            </div>
+            
+    
+            <div class="form-element">
+                <label id="email-label" for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Enter Email...">
+            </div>
+    
+    
+            <div class="form-element">
+                <label id="number-label" for="number"> Age </label>
+                <input id="number" name="number" type="number" min="10" max="110" placeholder="Enter age..">
+            </div>
+    
+    
+            <div class="form-element">
+                <p> How much time do you spend watching anime everday? </p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value> Select amount of time </option>
+                    <option value="hardly"> I hardly watch anime these days </option>
+                    <option value="LessThanOne"> Less than 1 hour everyday </option>
+                    <option value="OneToTwo"> 1-2 hours everyday </option>
+                    <option value="MoreThanTwo"> More than 2 hours everyday </option>
+                    <option value="PreferNot"> Prefer Not to Say </option>
+                </select>
+            </div>
+    
+    
+            <div class="form-element">
+                <p>Would you recommend anime to a friend?</p>
+                
+                <label>
+                    <input class="radio-input" type="radio" name="recommend" value="yes"> Yes
+                </label>
+                
+                <label>
+                    <input class="radio-input" type="radio" name="recommend" value="no"> No
+                </label>
+    
+                <label>
+                    <input class="radio-input" type="radio" name="recommend" value="not sure"> Not Sure
+                </label>
+            </div>
+    
+    
+            <div class="form-element" id="checkbox">
+                <p>What is your favorite genre(s)?</p>
+                <div>
+                    <input type="checkbox" value="action" id="action">
+                    <label for="action">Action</label>
+                </div>
+                 
+                <div>
+                    <input type="checkbox" value="adventure" id="adventure">
+                    <label for="adventure">Adventure</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" value="comedy" id="comedy">
+                    <label for="comedy"> Comedy</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="drama" id="drama">
+                    <label for="drama"> Drama </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sliceOfLife" id="sliceOfLife">
+                    <label for="sliceOfLife"> Slice Of Life </label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" value="fantasy" id="fantasy">
+                    <label for="fantasy">Fantasy</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="magic" id="magic">
+                    <label for="magic"> Magic</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="supernatural" id="supernatural">
+                    <label for="supernatural">Supernatural</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" value="horror" id="horror">
+                    <label for="horror">Horror</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" value="mystery" id="mystery">
+                    <label for="mystery">Mystery</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="psychological" id="psychological"> 
+                    <label for="psychological">Psychological</label>
+                </div>
+         
+                <div>
+                    <input type="checkbox" value="romance" id="romance">
+                    <label for="romance">Romance</label> 
+                </div>
+                
+                <div>
+                    <input type="checkbox" value="sci-fi" id="sci-fi">
+                    <label for="sci-fi">Sci-Fi</label>
+                </div>
+            </div>
+
+
+            <div class="form-element">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" cols="40" rows="20" placeholder="Enter your comments here..."></textarea>
+            </div>
+    
+
+            <div class="form-element">
+                <button type="submit" id="submit"> Submit </button>
+            </div>
+        
+        </form>
+    </div>
+    
+    
+
+
+
+</body>
+</html>

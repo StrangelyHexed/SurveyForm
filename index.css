@@ -1,0 +1,65 @@
+:root {
+  --color-white: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background: url(/photos/sakura_background.webp);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* width: 100vh;
+  height: auto; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* overflow: auto; */
+  z-index: -1;
+  border: 1px solid red;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background-color: var(--color-white);
+  margin: 50px 100px 50px 100px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+#title {
+  text-align: center;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+#description {
+  font-style: italic;
+}
+
+.form-element {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.form-element textarea {
+  position: relative;
+  resize: vertical;
+}
+
+#checkbox {
+  border: 1px solid red;
+}
+
+#checkbox div {
+  text-align: left;
+}
+#submit {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 20px;
+}
