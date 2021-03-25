@@ -7,12 +7,9 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* width: 100vh;
-  height: auto; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* overflow: auto; */
   z-index: -1;
   border: 1px solid red;
 }
@@ -22,12 +19,13 @@ body {
   text-align: center;
   background-color: var(--color-white);
   margin: 50px 100px 50px 100px;
-  padding: 10px;
+  padding: 40px;
   border: 1px solid blue;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #title {
-  text-align: center;
   font-weight: bold;
   font-family: fantasy;
 }
@@ -41,25 +39,35 @@ body {
   margin-top: 20px;
 }
 
-.form-element textarea {
-  position: relative;
-  resize: vertical;
+#number {
+  width: 70px;
 }
 
-#checkbox {
-  border: 1px solid red;
+.form-element textarea {
+  min-height: 100px;
+  width: 100%;
+  resize: none;
+  overflow-y: scroll;
 }
 
 #checkbox div {
   text-align: left;
+  padding-bottom: 10px;
 }
+
+#submit-btn {
+  text-align: center;
+}
+
 #submit {
   position: relative;
-  left: 50%;
-  right: 50%;
   text-align: center;
   padding: 10px;
-  border-radius: 10%;
   cursor: pointer;
   font-size: 20px;
+  width: 100%;
+  border-style: outset;
+  border: outset 4px rgb(143, 135, 135);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
 }
